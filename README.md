@@ -2,7 +2,7 @@
 
 노란색·파란색과 흰색을 중심으로 구성한 유아교사 개인 홈페이지입니다.
 
-사이트: https://kongjimin121-dotcom.github.io/jimin-portfolio/
+사이트: https://kongjimin01.github.io/jimin-portfolio/
 
 ## 구성
 
