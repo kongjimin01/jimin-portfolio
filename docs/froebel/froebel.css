@@ -71,13 +71,13 @@ h2{font-size:clamp(26px,3vw,36px);letter-spacing:-1.2px;line-height:1.4;margin:0
 .ig-user small{display:block;font-weight:400;color:var(--muted);font-size:12px}
 .deck{--gap:16px;position:relative;display:grid;grid-template-columns:repeat(5,1fr);gap:var(--gap);padding:6px 0 4px;cursor:pointer;outline:none}
 .card{position:relative;display:block;border-radius:10px;overflow:hidden;background:#f7eee5;box-shadow:0 8px 22px #5a3a2026;
-  z-index:calc(10 - var(--i));transition:transform .55s cubic-bezier(.2,.8,.2,1);
+  z-index:calc(10 - var(--i));transition:transform 1.15s cubic-bezier(.2,.8,.2,1);
   transform:translateX(calc((2 - var(--i)) * (100% + var(--gap)) + (var(--i) - 2) * 14px)) rotate(calc(var(--i) * 2.2deg)) scale(calc(1 - var(--i) * .03))}
 .card img{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover}
 .card-num{position:absolute;right:8px;bottom:8px;font-size:11px;color:#fff;background:#0007;border-radius:20px;padding:1px 8px;opacity:0;transition:opacity .3s}
 .deck.open .card{transform:none;transition-delay:calc(var(--i) * 40ms)}
 .deck.open .card-num{opacity:1}
-.deck.open .card:hover{transform:translateY(-4px) rotate(-.7deg);transition-delay:0s}
+.deck.settled .card{transition-duration:.25s;transition-delay:0s}.deck.open .card:hover{transform:translateY(-4px) rotate(-.7deg)}
 .deck:not(.open) .card{pointer-events:none}
 .deck-hint{margin:14px 0 0;text-align:center;font-size:12px;color:var(--muted)}
 .hint-touch{display:none}@media(hover:none){.hint-mouse{display:none}.hint-touch{display:inline}}.hint-open{display:none}.deck.open+.deck-hint .hint-open{display:inline}.deck.open+.deck-hint .hint-closed{display:none}
