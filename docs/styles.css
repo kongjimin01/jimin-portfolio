@@ -11,3 +11,12 @@
 @media(max-width:1000px){.qualifications{padding:24px}.qualifications ul{gap:22px}.qualifications li{font-size:14px}}
 @media(max-width:700px){.header{height:83px;min-height:83px;flex-wrap:nowrap;padding-block:0;gap:12px}.header nav{width:auto;gap:16px;font-size:12px}.hero{padding-top:38px}.portrait-area{row-gap:21px;min-height:0}.portrait-note{font-size:12px}.portrait-label{top:-10px}.qualifications{display:block;margin-top:27px;padding:23px}.qualifications ul{display:grid;gap:15px;margin-top:21px}.qualifications h3{font-size:23px}.qualifications li{font-size:15px}.journal-nav{gap:17px;font-size:12px;flex-wrap:wrap}.journal-nav>span{font-size:14px}.journal-nav a{white-space:nowrap}}
 .qualification-cert{flex:none;display:block;width:62px;padding:3px;background:#fff;border:1px solid #e5ebf5;border-radius:3px;box-shadow:0 4px 12px #2f5fc514;transition:transform .25s}.qualification-cert:hover{transform:translateY(-4px) rotate(-.7deg)}.qualification-cert img{width:100%;height:auto}@media(max-width:700px){.qualification-cert{width:56px;margin-top:18px}}@media(min-width:701px){.qualifications ul{margin-left:auto}}@media(max-width:700px){.header nav{gap:9px;font-size:11px}.header nav a{white-space:nowrap}}@media(max-width:380px){.header nav{gap:7px;font-size:10.5px}.header .brand{gap:7px}}
+.header nav a.nav-special{position:relative;display:inline-flex;align-items:center;gap:6px;padding:6px 13px 6px 11px;margin:-6px 0;border-radius:999px;background:var(--yellow);color:var(--ink);font-weight:700;box-shadow:0 0 0 0 #ffe27099;animation:navGlow 2.4s ease-out infinite;transition:transform .2s,background .2s}
+.header nav a.nav-special:hover{color:var(--ink);background:#ffd84a;transform:translateY(-2px)}
+.nav-dot{width:7px;height:7px;border-radius:50%;background:#e8604c;flex:none;animation:navDot 1.2s ease-in-out infinite}
+.nav-arrow{font-size:.9em;transition:transform .2s}
+.header nav a.nav-special:hover .nav-arrow{transform:translate(2px,-2px)}
+@keyframes navGlow{0%{box-shadow:0 0 0 0 #ffd84acc}70%{box-shadow:0 0 0 10px #ffd84a00}100%{box-shadow:0 0 0 0 #ffd84a00}}
+@keyframes navDot{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.35;transform:scale(.7)}}
+@media(max-width:700px){.header nav a.nav-special{padding:4px 8px;gap:4px;margin:-4px 0}.nav-dot{width:5px;height:5px}.nav-arrow{display:none}}@media(max-width:430px){.header .brand>span:not(.brand-mark){display:none}}
+@media(prefers-reduced-motion:reduce){.header nav a.nav-special,.nav-dot{animation:none}}
